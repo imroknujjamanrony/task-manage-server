@@ -10,7 +10,11 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: [
+    "http://localhost:5173",
+    "https://task-management-fdbe6.web.app",
+    "https://task-management-server-nu-six.vercel.app",
+  ],
 };
 
 app.use(cors(corsOptions));
